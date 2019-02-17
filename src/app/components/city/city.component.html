@@ -9,14 +9,14 @@
       - minimum 2 digits to the left of decimal
       - exactly 1 digit to the right of decimal
   -->
-  <div class="container" *ngIf="cityDetails">
+<div class="container" *ngIf="cityDetails">
 
-    <p class="cityName">{{ cityDetails }}, {{ cityDetails }}</p>
-    <div fxLayout="row" fxLayoutAlign="center none" fxLayoutGap="15px">
+  <p class="cityName">{{ cityDetails.city}}, {{ cityDetails.country }}</p>
+  <div fxLayout="row" fxLayoutAlign="center none" fxLayoutGap="15px">
     <div class="container-weather" fxLayout="row">
 
       <mat-card class="cityData" *ngIf="i<4">
-        <h3 class="date">  </h3>
+        <h3 class="date"> </h3>
         <mat-card>
           <img [src]="" class="weatherIcon">
           <span class="weather"> </span>
@@ -26,5 +26,5 @@
       </mat-card>
 
     </div>
-    </div>
   </div>
+</div>

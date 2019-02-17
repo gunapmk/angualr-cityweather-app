@@ -31,7 +31,7 @@
                 *ngFor="let searchItem of searchResults"
                 (click)="selectedLocation(searchItem)"
                 class="searchItem">
-
+                {{ searchItem.title }}
                 <mat-divider></mat-divider>
             </mat-list-item>
         </mat-list>
