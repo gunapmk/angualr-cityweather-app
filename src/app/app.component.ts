@@ -22,5 +22,6 @@ export class AppComponent implements OnInit {
       CHALLENGE
        - pass the city id to service.getCityDetails(woeid)
     */
+   this.weatherService.getCityDetails(woeid);
   }
 }

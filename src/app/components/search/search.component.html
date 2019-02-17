@@ -28,7 +28,7 @@
         <mat-list role="list" *ngIf="searchResults.length">
             <mat-list-item
                 role="listitem"
-                *ngFor=""
+                *ngFor="let searchItem of searchResults"
                 (click)="selectedLocation()"
                 class="searchItem">
 

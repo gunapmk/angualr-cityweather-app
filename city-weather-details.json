@@ -1,0 +1,165 @@
+{
+  "consolidated_weather": [
+    {
+      "id": 5569771768643584,
+      "weather_state_name": "Heavy Cloud",
+      "weather_state_abbr": "hc",
+      "wind_direction_compass": "SSE",
+      "created": "2019-02-17T05:10:40.995931Z",
+      "applicable_date": "2019-02-17",
+      "min_temp": 25.986666666666668,
+      "max_temp": 30.146666666666665,
+      "the_temp": 27.83,
+      "wind_speed": 6.98396126620536,
+      "wind_direction": 166.33825753653062,
+      "air_pressure": 1027.36,
+      "humidity": 80,
+      "visibility": 8.369869959436889,
+      "predictability": 71
+    },
+    {
+      "id": 5111163750711296,
+      "weather_state_name": "Heavy Cloud",
+      "weather_state_abbr": "hc",
+      "wind_direction_compass": "SSE",
+      "created": "2019-02-17T05:10:43.958861Z",
+      "applicable_date": "2019-02-18",
+      "min_temp": 25.143333333333334,
+      "max_temp": 30.580000000000002,
+      "the_temp": 27.96,
+      "wind_speed": 7.17700429491768,
+      "wind_direction": 162.30011764510087,
+      "air_pressure": 1025.66,
+      "humidity": 80,
+      "visibility": 9.997862483098704,
+      "predictability": 71
+    },
+    {
+      "id": 4732011721785344,
+      "weather_state_name": "Light Cloud",
+      "weather_state_abbr": "lc",
+      "wind_direction_compass": "SE",
+      "created": "2019-02-17T05:10:47.035833Z",
+      "applicable_date": "2019-02-19",
+      "min_temp": 24.540000000000003,
+      "max_temp": 30.580000000000002,
+      "the_temp": 28.1,
+      "wind_speed": 6.728657573106392,
+      "wind_direction": 129.7004469133389,
+      "air_pressure": 1026.66,
+      "humidity": 77,
+      "visibility": 9.997862483098704,
+      "predictability": 70
+    },
+    {
+      "id": 4556465285103616,
+      "weather_state_name": "Light Cloud",
+      "weather_state_abbr": "lc",
+      "wind_direction_compass": "ENE",
+      "created": "2019-02-17T05:10:50.111730Z",
+      "applicable_date": "2019-02-20",
+      "min_temp": 24.203333333333333,
+      "max_temp": 30.05666666666667,
+      "the_temp": 27.41,
+      "wind_speed": 5.71825817227392,
+      "wind_direction": 64.60824998179578,
+      "air_pressure": 1028.32,
+      "humidity": 69,
+      "visibility": 9.997862483098704,
+      "predictability": 70
+    },
+    {
+      "id": 4721095491977216,
+      "weather_state_name": "Light Cloud",
+      "weather_state_abbr": "lc",
+      "wind_direction_compass": "NE",
+      "created": "2019-02-17T05:10:52.961962Z",
+      "applicable_date": "2019-02-21",
+      "min_temp": 23.583333333333332,
+      "max_temp": 30.253333333333334,
+      "the_temp": 27.16,
+      "wind_speed": 5.582861820302765,
+      "wind_direction": 35.51087983908541,
+      "air_pressure": 1028.92,
+      "humidity": 67,
+      "visibility": 9.997862483098704,
+      "predictability": 70
+    },
+    {
+      "id": 4629284962435072,
+      "weather_state_name": "Heavy Cloud",
+      "weather_state_abbr": "hc",
+      "wind_direction_compass": "ENE",
+      "created": "2019-02-17T05:10:55.921752Z",
+      "applicable_date": "2019-02-22",
+      "min_temp": 23.2,
+      "max_temp": 30.0,
+      "the_temp": 25.87,
+      "wind_speed": 4.124665420610302,
+      "wind_direction": 77.73680396006978,
+      "air_pressure": 1027.5,
+      "humidity": 64,
+      "visibility": 9.997862483098704,
+      "predictability": 71
+    }
+  ],
+  "time": "2019-02-17T10:44:39.893759+05:00",
+  "sun_rise": "2019-02-17T06:00:59.917206+05:00",
+  "sun_set": "2019-02-17T17:45:14.468128+05:00",
+  "timezone_name": "zzz",
+  "parent": {
+    "title": "India",
+    "location_type": "Country",
+    "woeid": 23424848,
+    "latt_long": "21.786600,82.794762"
+  },
+  "sources": [
+    {
+      "title": "BBC",
+      "slug": "bbc",
+      "url": "http://www.bbc.co.uk/weather/",
+      "crawl_rate": 180
+    },
+    {
+      "title": "Forecast.io",
+      "slug": "forecast-io",
+      "url": "http://forecast.io/",
+      "crawl_rate": 480
+    },
+    {
+      "title": "HAMweather",
+      "slug": "hamweather",
+      "url": "http://www.hamweather.com/",
+      "crawl_rate": 360
+    },
+    {
+      "title": "OpenWeatherMap",
+      "slug": "openweathermap",
+      "url": "http://openweathermap.org/",
+      "crawl_rate": 360
+    },
+    {
+      "title": "Weather Underground",
+      "slug": "wunderground",
+      "url": "https://www.wunderground.com/?apiref=fc30dc3cd224e19b",
+      "crawl_rate": 720
+    },
+    {
+      "title": "World Weather Online",
+      "slug": "world-weather-online",
+      "url": "http://www.worldweatheronline.com/",
+      "crawl_rate": 360
+    },
+    {
+      "title": "Yahoo",
+      "slug": "yahoo",
+      "url": "http://weather.yahoo.com/",
+      "crawl_rate": 180
+    }
+  ],
+  "title": "Chennai",
+  "location_type": "City",
+  "woeid": 2295424,
+  "latt_long": "13.05939,80.245667",
+  "timezone": "Indian/Kerguelen"
+}
