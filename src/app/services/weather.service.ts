@@ -17,8 +17,8 @@ export class WeatherService {
     private http: HttpClient,
   ) { }
 
-  // baseUrl = 'https://cors-anywhere.herokuapp.com/https://www.metaweather.com';
-  baseUrl = 'https://www.metaweather.com';
+  baseUrl = 'https://cors-anywhere.herokuapp.com/https://www.metaweather.com';
+  // baseUrl = 'https://www.metaweather.com';
   rawd: IWeatherRawData;
   xc: IWeatherData;
 
@@ -45,7 +45,7 @@ export class WeatherService {
        - fetch the city weather data
        - transform the received data to required "IWeatherData" format using transformRawData() func
     */
-    this.http.get<IWeatherRawData>(this.baseUrl + 'baseUrl/api/location/' + woeid)
+    this.http.get<IWeatherRawData>(this.baseUrl + '/api/location/' + woeid)
       .subscribe(res => this.xc = this.transformRawData(res));
 
     return of(this.xc);

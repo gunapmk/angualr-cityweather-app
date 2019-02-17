@@ -8,7 +8,7 @@
         #searchInput
         matInput
         placeholder="paris, london..."
-        (keyup)="search()"
+        (keyup)="search(searchInput.value)"
         class="searchInput">
   </mat-form-field>
 </p>
@@ -29,7 +29,7 @@
             <mat-list-item
                 role="listitem"
                 *ngFor="let searchItem of searchResults"
-                (click)="selectedLocation()"
+                (click)="selectedLocation(searchItem)"
                 class="searchItem">
 
                 <mat-divider></mat-divider>

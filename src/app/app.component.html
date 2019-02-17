@@ -10,7 +10,7 @@
    - pass the city details to the CityComponent
  -->
 <app-search
-    (selectedCity)="getCityDetails()">
+    (selectedCity)="getCityDetails($event)">
 </app-search>
 <app-city
     cityDetails="cityDetails">
