@@ -15,16 +15,17 @@
   <div fxLayout="row" fxLayoutAlign="center none" fxLayoutGap="15px">
     <div class="container-weather" fxLayout="row">
 
-      <mat-card class="cityData" *ngIf="i<4">
-        <h3 class="date"> </h3>
-        <mat-card>
-          <img [src]="" class="weatherIcon">
-          <span class="weather"> </span>
-          <br>
-          <span class="cityTemp"> °C </span>
+      <mat-list role="list" *ngFor="let city of cityDetails.weather;index as i">
+        <mat-card class="cityData" *ngIf="i < 4">
+            <h3 class="date">{{city.date | date}} </h3>
+              <img [src]="city.weather_image" class="weatherIcon">
+              <span class="weather">{{city.weather_name}} </span>
+              <br>
+              <span class="cityTemp">{{city.temperature | number: '2.1-1'}} °C </span>
+              
         </mat-card>
-      </mat-card>
-
+        
+      </mat-list>
     </div>
   </div>
 </div>

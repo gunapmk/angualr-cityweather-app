@@ -8,7 +8,7 @@ import { ISearchResult } from '../../models/IWeatherData.interface';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-
+  // public addTaskValue: string;
   @ViewChild('searchInput') searchInput;
   searchResults: ISearchResult[];
   @Output() selectedCity = new EventEmitter();
@@ -27,7 +27,12 @@ export class SearchComponent implements OnInit {
               and assign the results to searchResults array
             - if input field is empty, clear the searResults array
     */
-    this.weatherService.searchLocation(term).subscribe(data => this.searchResults = data);
+    if (term === '') {
+      this.searchResults = null;
+    } else {
+      this.weatherService.searchLocation(term).subscribe(data => this.searchResults = data);
+    }
+
 
   }
 
@@ -40,9 +45,10 @@ export class SearchComponent implements OnInit {
           - clear all the results
           - send the cityid (woeid) to the parent component (AppComponent)
     */
-    console.log('selectedLocation woeid: ' + cityDetails.woeid);
-    // this.searchInput = '';
-    // this.searchResults = [];
+    // console.log('selectedLocation woeid: ' + cityDetails.woeid);
+    this.searchInput = '';
+    this.searchResults = null;
     this.selectedCity.emit(cityDetails.woeid);
+    // this.addTaskValue = '';
   }
 }

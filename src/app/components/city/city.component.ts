@@ -14,10 +14,11 @@ export class CityComponent implements OnInit {
   */
 
   @Input() cityDetails: IWeatherData;
-  i;
+  ie = 0;
   constructor() { }
 
   ngOnInit() {
+    // console.log('guanaun ');
   }
 
 }

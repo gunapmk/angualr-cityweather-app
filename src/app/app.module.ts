@@ -8,6 +8,7 @@ import { MaterialModule } from './material.module';
 import { SearchComponent } from './components/search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CityComponent } from './components/city/city.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CityComponent } from './components/city/city.component';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

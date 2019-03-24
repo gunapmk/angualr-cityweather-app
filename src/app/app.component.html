@@ -1,6 +1,6 @@
 <div class="container">
   <mat-toolbar class="app-title">
-    <span class="text-mid"> title </span>
+    <span class="text-mid">{{title}}</span>
   </mat-toolbar>
 </div>
 
@@ -13,5 +13,5 @@
     (selectedCity)="getCityDetails($event)">
 </app-search>
 <app-city
-    cityDetails="cityDetails">
+    [cityDetails]="cityDetails">
 </app-city>
